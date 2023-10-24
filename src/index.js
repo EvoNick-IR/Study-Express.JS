@@ -11,7 +11,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(usersRout);
+app.use("/api/users", usersRout);
 
 app.listen(PORT, () => {
   console.log(`app is starts on port: ${PORT}`);
