@@ -37,7 +37,6 @@ router.get("/:item", (req, res) => {
       username.lastname.includes(item) ||
       username.sex === item
   );
-  console.log(item);
   if (foundUser.length > 0) return res.status(200).send(foundUser);
   else res.status(404).send("user not found");
 });
